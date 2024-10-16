@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  
 </head>
 
 <body>
@@ -45,7 +46,7 @@
   <div class="container my-5 py-5">
     <div class="row align-items-center">
       <div class="col-md-3">
-        <img src="chima.jpg" class="img-fluid rounded-circle d-flex justify-content-center align-items-center"
+        <img src="{{ url_for('static', filename='chima.jpg')}}" class="img-fluid rounded-circle d-flex justify-content-center align-items-center"
           alt="Profile Picture">
       </div>
       <div class="col-md-9">
@@ -64,22 +65,22 @@
     <h2 class="section-title" style="text-align: center;">Service</h2>
     <div class="services-container">
       <div class="service-box">
-        <img src="kreatif.svg" alt="Creative Design Icon">
+        <img src="{{ url_for('static', filename='kreatif.svg')}}" alt="Creative Design Icon">
         <h3>Creative Design</h3>
         <p class="detail-text">hmmm</p>
       </div>
       <div class="service-box">
-        <img src="design.svg" alt="UI/UX Design Icon">
+        <img src="{{url_for('static', filename='design.svg')}}" alt="UI/UX Design Icon">
         <h3>UI/UX Design</h3>
         <p class="detail-text">Bisa dikit dikit lah xixi</p>
       </div>
       <div class="service-box">
-        <img src="web.svg" alt="Web Development Icon">
+        <img src="{{url_for('static', filename='web.svg')}}" alt="Web Development Icon">
         <h3>Web Development</h3>
         <p class="detail-text">masi belajar:p </p>
       </div>
       <div class="service-box">
-        <img src="marketing.svg" alt="Marketing Icon">
+        <img src="{{url_for('static', filename='marketing.svg')}}" alt="Marketing Icon">
         <h3>Marketing</h3>
         <p class="detail-text">nonono</p>
       </div>
@@ -96,7 +97,7 @@
     <div class="project-container">
       <div class="project">
         <div class="image-container">
-          <img src="daily.jpeg" alt="Project 1">
+          <img src="{{url_for('static', filename='daily.jpeg')}}" alt="Project 1">
           <div class="overlay">
             <p>Aplikasi DailyRental untuk rental mobil berbasis website</p>
           </div>
@@ -105,7 +106,7 @@
   
       <div class="project">
         <div class="image-container">
-          <img src="puskesmas.jpeg" alt="Project 2">
+          <img src="{{url_for('static', filename='puskesmas.jpeg')}}" alt="Project 2">
           <div class="overlay">
             <p>Website Puskesmas Ciparay</p>
           </div>
@@ -114,7 +115,7 @@
   
       <div class="project">
         <div class="image-container">
-          <img src="trashcare.png" alt="Project 3">
+          <img src="{{url_for('static', filename='trashcare.png')}}" alt="Project 3">
           <div class="overlay">
             <p>Aplikasi TrashCare untuk manajemen sampah</p>
           </div>
